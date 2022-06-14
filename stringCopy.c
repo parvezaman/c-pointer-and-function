@@ -1,4 +1,4 @@
-// not solved yet
+// solved but didnt understand
 #include <stdio.h>
 int getLength(char *intake)
 {
@@ -10,17 +10,23 @@ int getLength(char *intake)
     return i;
 }
 
-char stringCopier(char *intake, char *output)
+void stringCopier(char *intake, char *output)
 {
-    int length = getLength(intake);
+    /* int length = getLength(intake);
     printf("intake: %s, length: %d", *intake, length);
     for (int i = 0; i < length; i++)
     {
         output[i] = intake[i];
     }
     output[length] = '\0';
-    printf("in function: %s\n", *output);
-    return *output;
+    printf("in function: %s\n", *output); */
+    int i = 0;
+    while (intake[i] != '\0')
+    {
+        output[i] = intake[i];
+        i++;
+    }
+    output[i] = '\0';
 }
 int main()
 {
