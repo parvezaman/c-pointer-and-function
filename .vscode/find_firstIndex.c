@@ -25,9 +25,10 @@ int find_firstIndex(char intake[], char ch)
 int main()
 {
     char intake[100];
-    char ch;
-    scanf("%c", &ch); // why do i have to take the char input first???
+    char ch, temp;
     scanf("%s", intake);
+    scanf("%c", &temp); // why do i have to take the char input first???
+    scanf("%c", &ch);   // why do i have to take the char input first???
     /* getc(ch);
     gets(intake); */
 
